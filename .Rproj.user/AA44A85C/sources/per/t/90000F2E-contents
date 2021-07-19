@@ -1,0 +1,12 @@
+# 元となるデータフレーム
+data_frame <- data.frame(
+  data = 1:24
+)
+
+# 時系列データに変換
+ts_1 <- ts(
+  data_frame,
+  start = c(2010, 1),
+  frequency = 12 # 1年におけるデータ数
+)
+ts_1
